@@ -1,0 +1,18 @@
+{
+  "url": {
+    "display_name": "url",
+    "description": "Please enter your url",
+    "type": "url",
+    "required": true
+  },
+  "auth": {
+    "display_name": "auth",
+    "description": "Please enter your auth",
+    "type": "api_key",
+    "required": true,
+    "type_attributes": {
+      "product": "name of the product"
+    },
+    "secure": true
+  }
+}
