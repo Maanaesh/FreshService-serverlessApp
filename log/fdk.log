@@ -3275,3 +3275,809 @@ NOTE: We recommend a coverage of 80% for apps that are to be published in the pu
 2024-09-19 16:53:27.388 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
 2024-09-19 16:53:27.388 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
 2024-09-19 16:53:27.388 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:34:42.845 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 17:34:42.848 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:34:42.849 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 17:34:42.850 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 17:34:42.892 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:34:42.894 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 17:34:42.894 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 17:34:42.894 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 17:34:43.535 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 17:34:43.539 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 17:34:43.539 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 17:34:43.540 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 17:34:43.540 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 17:34:43.541 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:34:43.552 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:34:43.555 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 17:34:43.555 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 17:34:43.555 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 17:34:44.076 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 17:34:44.076 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 17:34:44.076 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:34:44.076 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 17:34:44.076 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 17:34:44.077 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 17:34:44.077 +0530 [warn] [33m⚠[39m server/server.js::20: Expected rejection to be handled.
+2024-09-19 17:34:44.077 +0530 [warn] 
+2024-09-19 17:34:44.077 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 17:34:44.080 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:34:44.081 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"2123e8770696c05b481f25b275fa2f74ada085cfe1b54e0971b5cc8446dcbc1e"}[0m
+2024-09-19 17:34:44.081 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 17:34:44.082 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 17:34:44.082 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 17:34:44.082 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 17:34:44.085 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 17:34:44.086 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 17:34:44.087 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 17:34:44.097 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 17:34:44.097 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 17:34:44.097 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 17:34:44.097 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 17:34:44.098 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:38:56.603 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:38:56.606 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 17:38:56.608 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 17:38:56.654 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:38:56.655 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 17:38:56.655 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 17:38:56.655 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:38:57.287 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 17:38:57.287 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 17:38:57.288 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 17:38:57.292 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 17:38:57.292 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 17:38:57.293 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 17:38:57.293 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 17:38:57.294 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:38:57.305 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:38:57.308 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 17:38:57.308 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 17:38:57.308 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 17:38:57.524 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 17:38:57.524 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 17:38:57.524 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:38:57.524 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 17:38:57.524 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 17:38:57.525 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 17:38:57.525 +0530 [warn] [33m⚠[39m server/server.js::21: Expected rejection to be handled.
+2024-09-19 17:38:57.525 +0530 [warn] 
+2024-09-19 17:38:57.525 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 17:38:57.528 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:38:57.528 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"2123e8770696c05b481f25b275fa2f74ada085cfe1b54e0971b5cc8446dcbc1e"}[0m
+2024-09-19 17:38:57.528 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 17:38:57.530 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 17:38:57.530 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 17:38:57.530 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 17:38:57.533 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 17:38:57.534 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 17:38:57.534 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 17:38:57.535 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 17:38:57.544 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 17:38:57.544 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 17:38:57.544 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 17:38:57.544 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 17:38:57.545 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:46:16.009 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:46:16.009 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:46:16.009 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 17:46:16.009 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 17:46:16.010 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 17:46:16.010 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 17:46:16.010 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 17:46:16.010 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:46:16.010 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 17:46:16.011 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 17:46:16.052 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:46:16.054 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 17:46:16.054 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 17:46:16.054 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 17:46:16.696 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 17:46:16.696 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 17:46:16.697 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 17:46:16.701 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 17:46:16.701 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 17:46:16.702 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 17:46:16.703 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 17:46:16.703 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:46:16.715 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 17:46:16.717 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 17:46:16.718 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 17:46:16.718 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 17:46:17.220 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 17:46:17.220 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 17:46:17.220 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:46:17.220 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 17:46:17.220 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 17:46:17.222 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 17:46:17.222 +0530 [warn] [33m⚠[39m server/server.js::21: Expected rejection to be handled.
+2024-09-19 17:46:17.223 +0530 [warn] 
+2024-09-19 17:46:17.223 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 17:46:17.228 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 17:46:17.228 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"618230593bfbae6a20d68b079a3311c66b701c154981210cbe5d70025b271de5"}[0m
+2024-09-19 17:46:17.228 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 17:46:17.230 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 17:46:17.231 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 17:46:17.231 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 17:46:17.235 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 17:46:17.235 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 17:46:17.237 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 17:46:17.249 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 17:46:17.250 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 17:46:17.250 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 17:46:17.250 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 17:46:17.250 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 17:46:17.251 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:02:43.035 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:02:43.038 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:02:43.040 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:02:43.083 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:02:43.084 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:02:43.084 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:02:43.084 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:02:43.714 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:02:43.715 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:02:43.715 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:02:43.715 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:02:43.718 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:02:43.718 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:02:43.720 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:02:43.720 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:02:43.720 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:02:43.732 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:02:43.734 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:02:43.735 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:02:43.735 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:02:44.115 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:02:44.115 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:02:44.115 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:02:44.115 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:02:44.115 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:02:44.117 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 20:02:44.117 +0530 [warn] [33m⚠[39m server/server.js::21: Expected rejection to be handled.
+2024-09-19 20:02:44.117 +0530 [warn] 
+2024-09-19 20:02:44.117 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 20:02:44.122 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:02:44.123 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"618230593bfbae6a20d68b079a3311c66b701c154981210cbe5d70025b271de5"}[0m
+2024-09-19 20:02:44.123 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 20:02:44.125 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 20:02:44.125 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 20:02:44.125 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 20:02:44.131 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 20:02:44.132 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 20:02:44.133 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 20:02:44.134 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 20:02:44.145 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 20:02:44.145 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 20:02:44.145 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 20:02:44.145 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 20:02:44.146 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:15:40.719 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:15:40.722 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:15:40.723 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:15:40.725 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:15:40.766 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:15:40.767 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:15:40.767 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:15:40.768 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:15:41.397 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:15:41.397 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:15:41.397 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:15:41.397 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:15:41.397 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:15:41.398 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:15:41.398 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:15:41.398 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:15:41.398 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:15:41.398 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:15:41.401 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:15:41.401 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:15:41.403 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:15:41.403 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:15:41.403 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:15:41.415 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:15:41.417 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:15:41.418 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:15:41.418 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:15:41.643 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:15:41.643 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:15:41.643 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:15:41.643 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:15:41.643 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:15:41.644 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 20:15:41.644 +0530 [warn] [33m⚠[39m server/server.js::22: Expected rejection to be handled.
+2024-09-19 20:15:41.644 +0530 [warn] 
+2024-09-19 20:15:41.644 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 20:15:41.648 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:15:41.648 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"618230593bfbae6a20d68b079a3311c66b701c154981210cbe5d70025b271de5"}[0m
+2024-09-19 20:15:41.648 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 20:15:41.650 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 20:15:41.650 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 20:15:41.650 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 20:15:41.654 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 20:15:41.654 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 20:15:41.655 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 20:15:41.656 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 20:15:41.666 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 20:15:41.666 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 20:15:41.666 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 20:15:41.666 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 20:15:41.667 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:16:24.329 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:24.332 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:16:24.334 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:16:24.374 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:24.375 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:16:24.375 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:16:24.375 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:24.980 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:16:24.980 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:16:24.981 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:16:24.981 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:16:24.981 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:16:24.982 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:16:24.982 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:16:24.982 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:16:24.982 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:16:24.982 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:16:24.985 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:16:24.985 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:16:24.987 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:16:24.987 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:16:24.987 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:16:24.998 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:16:25.001 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:16:25.001 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:16:25.001 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:16:25.362 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:16:25.362 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:16:25.362 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:16:25.362 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:16:25.363 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:16:25.364 +0530 [error] Packing failed due to the following issue(s):
+2024-09-19 20:16:25.364 +0530 [error] [31m✖[39m server/server.js::32: 'res' is defined but never used.
+2024-09-19 20:16:25.364 +0530 [error] 
+2024-09-19 20:16:25.364 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 20:16:25.364 +0530 [warn] [33m⚠[39m server/server.js::22: Expected rejection to be handled.
+2024-09-19 20:16:25.364 +0530 [warn] 
+2024-09-19 20:16:25.373 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:16:52.074 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:16:52.075 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:52.075 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:52.076 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:16:52.077 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:16:52.112 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:52.113 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:16:52.113 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:16:52.113 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:16:52.715 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:16:52.715 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:16:52.715 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:16:52.715 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:16:52.715 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:16:52.716 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:16:52.716 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:16:52.716 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:16:52.716 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:16:52.716 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:16:52.719 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:16:52.719 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:16:52.722 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:16:52.722 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:16:52.723 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:16:52.734 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:16:52.736 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:16:52.737 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:16:52.737 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:16:53.090 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:16:53.090 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:16:53.090 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:16:53.090 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:16:53.090 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:16:53.091 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 20:16:53.091 +0530 [warn] [33m⚠[39m server/server.js::22: Expected rejection to be handled.
+2024-09-19 20:16:53.091 +0530 [warn] 
+2024-09-19 20:16:53.091 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 20:16:53.095 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:16:53.095 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"634f55de06b1527c466605df48d9f91ca7d7d598f66b9198df1db7e354b883fc"}[0m
+2024-09-19 20:16:53.095 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 20:16:53.096 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 20:16:53.097 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 20:16:53.097 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 20:16:53.100 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 20:16:53.101 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 20:16:53.102 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 20:16:53.112 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 20:16:53.112 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 20:16:53.113 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 20:16:53.113 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 20:16:53.114 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:27:41.965 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:27:41.969 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:27:41.969 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:27:41.969 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:27:41.969 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:27:41.969 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:27:41.970 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:27:41.970 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:27:41.970 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:27:41.971 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:27:42.014 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:27:42.015 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:27:42.015 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:27:42.016 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:27:42.652 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:27:42.652 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:27:42.653 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:27:42.657 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:27:42.657 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:27:42.658 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:27:42.658 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:27:42.659 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:27:42.671 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:27:42.674 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:27:42.674 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:27:42.674 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:27:42.952 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:27:42.952 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:27:42.952 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:27:42.952 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:27:42.952 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:27:42.953 +0530 [warn] Please ensure that the following are addressed for quick review process:
+2024-09-19 20:27:42.953 +0530 [warn] [33m⚠[39m server/server.js::23: Expected rejection to be handled.
+2024-09-19 20:27:42.953 +0530 [warn] 
+2024-09-19 20:27:42.954 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 20:27:42.958 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:27:42.958 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"105c2026f75e18b70a56a469c7267558eb80d99055f87014723c0d99e4c7ba85"}[0m
+2024-09-19 20:27:42.958 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 20:27:42.960 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 20:27:42.960 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 20:27:42.960 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 20:27:42.965 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 20:27:42.965 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 20:27:42.966 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 20:27:42.967 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 20:27:42.975 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 20:27:42.976 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 20:27:42.976 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 20:27:42.976 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 20:27:42.976 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 20:27:42.977 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:58:00.031 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 20:58:00.033 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:58:00.034 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 20:58:00.035 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 20:58:00.073 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:58:00.074 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 20:58:00.074 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 20:58:00.074 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 20:58:00.656 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 20:58:00.656 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:58:00.656 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 20:58:00.656 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 20:58:00.656 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 20:58:00.657 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 20:58:00.657 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 20:58:00.657 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 20:58:00.657 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 20:58:00.657 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 20:58:00.660 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 20:58:00.661 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 20:58:00.663 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 20:58:00.663 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 20:58:00.664 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:58:00.676 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 20:58:00.679 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 20:58:00.680 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 20:58:00.680 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 20:58:01.135 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 20:58:01.135 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 20:58:01.136 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:58:01.136 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 20:58:01.136 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 20:58:01.137 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 20:58:01.141 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 20:58:01.141 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"6c0c9f4d67f670ad7a886581f7b8f237fe7d0134bf66a8b605adc7cda039d95c"}[0m
+2024-09-19 20:58:01.141 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 20:58:01.143 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 20:58:01.143 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 20:58:01.143 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 20:58:01.147 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 20:58:01.148 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 20:58:01.149 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 20:58:01.150 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 20:58:01.161 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 20:58:01.161 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 20:58:01.161 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 20:58:01.161 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 20:58:01.163 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 21:04:38.510 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:04:38.513 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 21:04:38.515 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 21:04:38.555 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:04:38.557 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 21:04:38.557 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 21:04:38.557 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 21:04:39.197 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 21:04:39.201 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 21:04:39.201 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 21:04:39.203 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 21:04:39.203 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 21:04:39.203 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 21:04:39.215 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 21:04:39.217 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 21:04:39.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 21:04:39.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 21:04:39.727 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 21:04:39.727 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 21:04:39.727 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 21:04:39.727 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 21:04:39.727 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 21:04:39.728 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 21:04:39.732 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 21:04:39.732 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"6c0c9f4d67f670ad7a886581f7b8f237fe7d0134bf66a8b605adc7cda039d95c"}[0m
+2024-09-19 21:04:39.732 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 21:04:39.733 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 21:04:39.733 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 21:04:39.734 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 21:04:39.738 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 21:04:39.739 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 21:04:39.741 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 21:04:39.742 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 21:04:39.753 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 21:04:39.754 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 21:04:39.754 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 21:04:39.754 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 21:04:39.754 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 21:04:39.755 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 21:13:32.531 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 21:13:32.534 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 21:13:32.534 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{"request":{"timeout":15000}}"[0m
+2024-09-19 21:13:32.534 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{},"request":{"timeout":15000}}"[0m
+2024-09-19 21:13:32.535 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://cdn.freshdev.io/assets/fdk/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020},"request":{"timeout":15000},"global_apps":{"enabled":false},"easel":{"enabled":false}}"[0m
+2024-09-19 21:13:32.535 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v18.20.4 on darwin[0m
+2024-09-19 21:13:32.535 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/maanaeshswamy/serverlessApp/.fdk/store.sqlite"[0m
+2024-09-19 21:13:32.535 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:13:32.535 +0530 [debug] ([34mupdater.js[0m) [31mlast check less than 24 hours ago, not looking for updates[0m
+2024-09-19 21:13:32.536 +0530 [debug] ([34mindex.js[0m) [31mrunning with opts {}[0m
+2024-09-19 21:13:32.579 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:13:32.580 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.3","product":{"freshservice":{"events":{"onTicketCreate":{"handler":"onTicketCreateHandler"}}}},"engines":{"node":"18.20.4","fdk":"9.2.0"},"dependencies":{"axios":"0.21.1"}}.[0m
+2024-09-19 21:13:32.580 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2024-09-19 21:13:32.580 +0530 [debug] ([34mdata.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<9","message":"This FDK version has been deprecated. There will be no further feature updates to this version. For a seamless app-building experience, ensure to move to the latest FDK version. For more information, see https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/migration-guide/#migrate-to-the-latest-platform-version."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"9.2.0","command":"npm install https://cdn.freshdev.io/fdk/latest.tgz -g","message":"You are on the latest FDK version. For information on the features available as part of this FDK version, see https://developers.freshworks.com/docs/?tab=modules."}},"addon":{"version":"2.0.4","url":"https://cdn.freshdev.io/assets/fdk/addons/addon.zip"}},"last_updated":{"time_stamp":1726724665078}}[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mpack.js[0m) [31m'pack' called with {}[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator requests[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/maanaeshswamy/serverlessApp/config/ exists.[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files assets,iparams.json[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2024-09-19 21:13:33.218 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2024-09-19 21:13:33.222 +0530 [debug] ([34mevent.js[0m) [31mFound ["onTicketCreateHandler"] as exported functions.[0m
+2024-09-19 21:13:33.222 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2024-09-19 21:13:33.223 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator lint[0m
+2024-09-19 21:13:33.223 +0530 [debug] ([34mlint.js[0m) [31mpassed fix flag: undefined[0m
+2024-09-19 21:13:33.224 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/lib/handle-response.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 21:13:33.235 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file server/server.js : no-caller,no-process-env,complexity,max-nested-callbacks,handle-callback-err,no-eval,no-alert,no-debugger,no-unreachable,no-unpkg-cdn,no-unhandled-promise,no-logging-rejections,no-non-client-request-model,no-deprecated-apis,no-proxy-requests,no-dependency-mismatch,no-empty-function,no-unused-vars[0m
+2024-09-19 21:13:33.238 +0530 [debug] ([34mlint.js[0m) [31mRunning the following lints on the file config/assets/iparams.js : no-unpkg-cdn,no-logging-rejections,no-proxy-requests[0m
+2024-09-19 21:13:33.239 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2024-09-19 21:13:33.239 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest-dependency[0m
+2024-09-19 21:13:33.671 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2024-09-19 21:13:33.671 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2024-09-19 21:13:33.671 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 21:13:33.671 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2024-09-19 21:13:33.671 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-settings[0m
+2024-09-19 21:13:33.673 +0530 [info] App being packed in Node v18.20.4 using FDK 9.2.0
+2024-09-19 21:13:33.677 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m
+2024-09-19 21:13:33.678 +0530 [debug] ([34mdata.js[0m) [31mRead {"report_hash":"6c0c9f4d67f670ad7a886581f7b8f237fe7d0134bf66a8b605adc7cda039d95c"}[0m
+2024-09-19 21:13:33.678 +0530 [debug] ([34mreport.js[0m) [31mComparing the stored hash with report.json file hash[0m
+2024-09-19 21:13:33.680 +0530 [debug] ([34mpack.js[0m) [31mCannot find './app' directory while packing.[0m
+2024-09-19 21:13:33.680 +0530 [debug] ([34mpack.js[0m) [31mCannot find './visitor-app' directory while packing.[0m
+2024-09-19 21:13:33.680 +0530 [debug] ([34mpack.js[0m) [31mCannot find './src' directory while packing.[0m
+2024-09-19 21:13:33.685 +0530 [debug] ([34mfile.js[0m) [31mComputing digest for manifest.json.[0m
+2024-09-19 21:13:33.685 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/lib/handle-response.js[0m
+2024-09-19 21:13:33.686 +0530 [debug] ([34mpack.js[0m) [31mPacking ./server/server.js[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/assets/iparams.js[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./config/iparams.json[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./manifest.json[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./.report.json[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./README.md[0m
+2024-09-19 21:13:33.687 +0530 [debug] ([34mpack.js[0m) [31mPacking ./digest.md5[0m
+2024-09-19 21:13:33.698 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator actions[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator requests[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-dir[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator config-dir[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator custom-objects[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator event[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator iparam[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator oauth[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator pkgsize[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator schema[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator version-check[0m
+2024-09-19 21:13:33.699 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator app-settings[0m
+2024-09-19 21:13:33.699 +0530 [info] App packed successfully at /dist/serverlessApp.zip
+2024-09-19 21:13:33.699 +0530 [info] Upload this file to the marketplace by following the instructions at https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-submission-process/
+2024-09-19 21:13:33.699 +0530 [debug] ([34mfile.js[0m) [31mDeleting digest.[0m
+2024-09-19 21:13:33.700 +0530 [debug] ([34mreport.js[0m) [31mGenerating hash for report.json file[0m

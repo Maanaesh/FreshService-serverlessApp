@@ -4,7 +4,7 @@ exports = {
 
   // args is a JSON block containing the payload information.
   // args['iparam'] will contain the installation parameter values.
-  onTicketCreateHandler: function(args) {
+  onTicketCreateHandler: async function(args) {
     Tktdata=
       {
         "description": args['data']['ticket']['description'],
@@ -16,18 +16,22 @@ exports = {
     }
     
     //console.log('Hello ' + args['data']['requester']['name']);
-    console.log(Tktdata);
-    axios.post('https://effy-opinyin.freshdesk.com/api/v2/tickets',Tktdata,{
+    //console.log(Tktdata);
+    const api_key= args.iparams.auth;
+    const url=args.iparams.url;
+    // console.log(`${url}/api/v2/tickets`)
+    await axios.post(`${url}/api/v2/tickets`,Tktdata,{
       headers: {
+        
         'Content-Type': 'application/json'
     },
     auth: {
-        username: 'GNqXIlHkv2vmPWhxg6zE',
+        username: api_key,
         password: 'X'
     },
     })
     .then((res)=>{
-      console.log(res);
+      console.log("ok",res.status);
     });
   }
 
