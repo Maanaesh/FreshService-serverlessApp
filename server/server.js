@@ -1,39 +1,56 @@
-const axios = require('axios')
+const axios = require('axios');
 
 exports = {
 
   // args is a JSON block containing the payload information.
   // args['iparam'] will contain the installation parameter values.
   onTicketCreateHandler: async function(args) {
-    Tktdata=
-      {
-        "description": args['data']['ticket']['description'],
-        "subject": args['data']['ticket']['subject'],
-        "email": args['data']['requester']['email'],
-        "priority": args['data']['ticket']['priority'],
-        "status": args['data']['ticket']['status'],
-        "cc_emails": args['data']['ticket']['reply_cc_emails']
-    }
-    
-    //console.log('Hello ' + args['data']['requester']['name']);
-    //console.log(Tktdata);
-    const api_key= args.iparams.auth;
-    const url=args.iparams.url;
-    // console.log(`${url}/api/v2/tickets`)
-    await axios.post(`${url}/api/v2/tickets`,Tktdata,{
-      headers: {
+    const jsonObj = {};
+    const selectedFields = args.iparams.selectedFields;
+
+    if (args.data && args.data.ticket) {
+      selectedFields.forEach((field) => {
+        const fieldNameLower = field.name.toLowerCase(); 
+
         
-        'Content-Type': 'application/json'
-    },
-    auth: {
+        const ticketKeys = Object.keys(args.data.ticket).map(key => key.toLowerCase());
+
+       
+        if (ticketKeys.includes(fieldNameLower)) {
+          jsonObj[fieldNameLower] = args.data.ticket[fieldNameLower];
+        } else {
+          console.log(`Field ${field.name} does not exist in ticket data.`);
+        }
+      });
+    } else {
+      console.error("Invalid selectedFields or ticket data.");
+    }
+
+   
+    jsonObj["email"] = args.data.requester.email;
+
+    const api_key = args.iparams.key;
+const url = args.iparams.url;
+
+  try {
+    // Making the POST request to create a ticket
+    const response = await axios.post(`${url}/api/v2/tickets`, jsonObj, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      auth: {
         username: api_key,
-        password: 'X'
-    },
-    })
-    .then((res)=>{
-      console.log("ok",res.status);
+        password: 'X',
+      },
     });
+    console.log('Success:', response.status);
+
+  } catch (error) {
+  
+    console.log('Error Response:', error.response.status, error.response.data);
+    } 
   }
 
+}
 
-};
+

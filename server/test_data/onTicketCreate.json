@@ -4,8 +4,10 @@
   "timestamp": 1496400354326,
   "region": "US",
   "event": "onTicketCreate",
+  "City": "chennai",
   "data": {
     "ticket": {
+      "IP": 1234,
       "subject": "Support Needed...",
       "description": "<div>Some details on the issue ..</div>",
       "is_description_html_truncated": false,
@@ -15,6 +17,7 @@
       "fr_due_by": "2015-07-14T13:08:06Z",
       "fr_escalated": false,
       "is_escalated": false,
+      "status": 2,
       "fwd_emails": [
         "charles@freshservice.com",
         "diana@freshservice.com"
@@ -34,7 +37,6 @@
       "responder_id": 320,
       "responder_email": "andrea@freshservice.com",
       "responder_name": "Andrea",
-      "status": 2,
       "status_name": "Open",
       "priority": 1,
       "priority_name": "Low",
