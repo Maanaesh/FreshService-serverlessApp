@@ -88,8 +88,3 @@ This will generate a zip file in the /dist directory.
 
 ## Deployment
 Refer [Freshworks Developer Docs](https://developers.freshworks.com/docs/app-sdk/v2.3/freshservice/app-submission-process/custom-apps/#upload,-test,-and-publish-a-new-custom-app)
-
-
-
-
-Explore [more of app sample apps](https://community.developers.freshworks.com/t/freshworks-sample-apps/3604) on the Freshworks github respository.
