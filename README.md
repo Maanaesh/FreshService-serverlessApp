@@ -78,6 +78,7 @@ cd serverlessApp
     }
 }
 ```
+alternatively you can create iparam.html for a more flexible installation page (created in the latest commit)
 ### Step 7: Pack the Application
 ```
 fdk validate
