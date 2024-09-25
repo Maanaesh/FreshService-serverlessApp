@@ -33,7 +33,6 @@ exports = {
 const url = args.iparams.url;
 
   try {
-    // Making the POST request to create a ticket
     const response = await axios.post(`${url}/api/v2/tickets`, jsonObj, {
       headers: {
         'Content-Type': 'application/json',
